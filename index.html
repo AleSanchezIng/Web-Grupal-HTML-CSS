@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>Trayecto Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="contenedor-general">
+  <header id="marca">
+    <nav>
+      <div class="logo">
+        <img src="imagenes/logo.PNG" alt="Trayecto Travel">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="#destinations">Destinos</a></li> -->
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="asistencialviajero.html">Asistencia al viajero</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li> <a href="ofertaslaborales.html">Trabaja con nosotros</a></li>
+      </ul>
+    </nav>
+    <div class="Trayecto Travel">
+      <h1 id="logo">Trayecto Travel</h1>
+      <p class="plogo">Tu socio en viajes para descubrir los destinos más hermosos del mundo.</p>
+      <a href="#contact" class="btn">Contáctanos</a>
+    </div>
+  </header>
+
+  <section class="contenedor1">
+    <div class="row">
+      <div class="col">
+        <h2>Destinos populares</h2>
+        <p>
+          ¡Descubre la esencia de la aventura en los destinos más populares del mundo! Sumérgete en una experiencia única y emocionante mientras exploras lugares fascinantes que te dejarán sin aliento.    
+        </p>
+        <a href="https://travelservices.com/" target="_blank"><button type="button">Explorar</button></a>
+      </div>
+      <div class="col">
+
+        <div class="card card1">
+          <h3>Mar del Plata</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+        </div>
+        <div class="card card2">
+          <h3>Puerto Iguazú</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+        </div>
+        <div class="card card3">
+          <h3>Punta del Este</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+        </div>
+        <div class="card card4">
+          <h3>Canada</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="form-contenedor-vuelo">
+    <form action="" class="form-vuelos">
+         <div class="servicescompra servisvuelo"><h2>Vuelos con reservas flexibles</h2></div>
+
+        <div class="form-div-vuelos">
+
+            <input type="radio" name="ida" value="viajeida">Solo ida
+            <input type="radio" name="ida" value="viajeida">Solo vuelta
+            <input type="radio" name="ida" value="viajeida">Ida y vuelta
+    
+        </div>
+        <div class="row-vuelos">
+            <div class="col-vuelos">
+                <label for="origen" class="form-label-vuelos">ORIGEN:</label>
+
+                <div class="select-vuelos">
+                    <select name="format" id="format-vuelos">
+                        <option selected disabled>Ej. Buenos Aires, Argentina</option>
+                        <option value="bsas">Buenos Aires</option>
+                        <option value="tucumán">Tucumán</option>
+                        <option value="rosario">Rosario</option>
+                        <option value="santacruz">Santa Cruz</option>
+                        <option value="jujy">Jujuy</option>
+                        <option value="salta">Salta</option>
+                        <option value="mendoza">Mendoza</option>
+                    </select>
+                  </div>
+
+                <!-- <label for="origen" class="form-label">Origen:</label> -->
+                <!-- <input type="text" id="nombre" class="form-input" placeholder="Buenos Aires, Argentina"> -->
+        
+                <label for="destino" class="form-label-vuelos">DESTINO:</label>
+                <div class="select-vuelos">
+                    <select name="format" id="format-vuelos">
+                        <option selected disabled>Ej. Miami, Estados Unidos</option>
+                        <option value="miami">Miami</option>
+                        <option value="canada">Canada</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="santacruz">Santa Cruz</option>
+                        <option value="jujuy">Jujuy</option>
+                        <option value="salta">Salta</option>
+                        <option value="mendoza">Mendoza</option>
+                    </select>
+                  </div>
+                <!-- <input type="text" id="nombre" class="form-input" placeholder="Destino - Miami, Estados Unidos"> -->
+              <!-- 
+                <label for="correo" class="form-label">Correo Electronico:</label>
+                <input type="text" id="nombre" class="form-input" placeholder="Escriba su e-mail">
+
+                <label for="menesaje" class="form-label">Comentario:</label>
+                <textarea type="text" id="nombre" class="form-input" placeholder="Escriba aquí su comentario..."></textarea> -->
+            </div>
+            <div class="col-vuelos col2-vuelos">
+                <label for="origen" class="form-label-vuelos">FECHAS:</label>
+                <input type="date"> <!--calendario 1-->
+                <input type="date"> <!--calendario 2-->
+                <br><input type="checkbox" class="checkboxlabel">Todavia no he decidido la fecha</input><br>
+                <div class="contenedornum-vuelos">
+                <label for="origen" class="form-label-vuelos">CANTIDAD DE PASAJEROS:</label>
+                <input type="number">
+                </div>
+            </div>
+
+        </div>
+        <div class="botonbuscar-vuelos">
+        <input type="submit" class="btn-submit" value="Buscar">
+        </div>
+    </form>
+  </section>
+
+  <div class="servicescompra"><h2>Nuestros servicios</h2></div>
+  
+  <section class="services">
+    <!-- <h2>Nuestros servicios</h2> -->
+
+    <div class="cardservice cardserv1">
+      <!-- <img src="service1.jpg" alt="Alojamiento"> -->
+      <a href="https://www.travelservices.com/hoteles" target="_blank">
+      <h3>ALOJAMIENTOS</h3>
+      <p>Definí de cuántos días disponés y qué tipo de hospedaje preferís: un hotel, camping, cabaña u otro. Esta agencia de viajes te ofrece alternativas que se adecuan a tus preferencias y posibilidades. Vuelos, traslados desde y hacia el aeropuerto y una amplia variedad de alojamientos. Además de excursiones y actividades recomendadas en el destino. Y el alquiler de un auto para que recorras sitios que no te querés perder.</p>
+      </a>
+    </div>
+
+    <div class="cardservice cardserv2">
+      <a href="https://www.despegar.com.ar/autos/c-mia/alquiler-de-autos-en-miami" target="_blank">
+      <h3>AUTOS</h3>
+      <p>Sentí la libertad que te da conocer una ciudad al estar detrás del volante. Con tu rent a car podés tomar las riendas de tu tiempo y armar tu propio itinerario para recorrer y conocer todo lo que quieras. Podés elegir alquiler de autos pequeños, para pocas personas, o grandes, si vas con amigos o con tu familia. ¡Disfrutá tu destino a tu ritmo y aprovechá para conocer mucho más en tu viaje! No te vas a arrepentir de alquilar un auto.</p>
+      </a>
+    </div>
+
+    <div class="cardservice cardserv3">
+      <a href="https://www.despegar.com.ar/actividades/ush/actividades-en-ushuaia" target="_blank">
+      <h3>EXCURSIONES</h3>
+      <p>
+        ¡Experimenta la emoción de un viaje inolvidable con nuestro pack de excursiones diseñadas especialmente para ti! ¿Estás listo para sumergirte en aventuras épicas, explorar destinos fascinantes y crear recuerdos duraderos? ¡Entonces no puedes perder la oportunidad de contratar nuestro pack de excursiones exclusivas!
+       <br> Excursiones regulares. Búsqueda por alojamientos céntricos a partir de las 7 am. Regreso a partir de las 18 hs.</p>
+      </a>
+    </div>
+ 
+  </section>
+
+  <div class="servicescompra"><h2>Testimonios de nuestros clientes</h2></div>
+  <section class="services">
+    <!-- <h2>Testimonios de nuestros clientes</h2> -->
+    <div class="testimonios">
+      <div class="testimoniocontenedor">
+          <!-- caja 1 -->
+          <div class="testimoniocaja">
+              <!-- top -->
+              <div class="cajatop">
+                  <!-- perfil -->
+                  <div class="perfil">
+                      <!-- imagen -->
+                      <div class="perfilimg">
+                          <img src="imagenes/yo.jpg">
+                      </div>
+                      <!-- nombre y usuario -->
+                      <div class="nameuser">
+                          <strong>Ale Sanchez</strong>
+                          <span>@ale_as</span>
+                      </div>
+                  </div>
+                  <!-- Reseñas -->
+                  <div class="reseñas">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+              </div>
+              <!-- comentarios -->
+              <div class="comentariosclientes">
+                  <p>
+                      ¡Una experiencia inolvidable de 5 estrellas con esta empresa turística! Mi viaje fue simplemente espectacular de principio a fin. Desde el momento en que me uní a su tour, me sentí cuidado y atendido en todo momento.</p>
+              </div>
+          </div>
+           <!-- caja 2 -->
+           <div class="testimoniocaja">
+              <!-- top -->
+              <div class="cajatop">
+                  <!-- perfil -->
+                  <div class="perfil">
+                      <!-- imagen -->
+                      <div class="perfilimg">
+                          <img src="imagenes/perfil2.jpg">
+                      </div>
+                      <!-- nombre y usuario -->
+                      <div class="nameuser">
+                          <strong>Amelia Parker</strong>
+                          <span>@Luna Aventurera</span>
+                      </div>
+                  </div>
+                  <!-- Reseñas -->
+                  <div class="reseñas">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+              </div>
+              <!-- comentarios -->
+              <div class="comentariosclientes">
+                  <p>
+                    Mi experiencia con esta empresa turística fue en general satisfactoria, aunque no completamente excepcional. Si bien disfruté de mi viaje, hubo algunos aspectos que considero que podrían mejorarse.
+                    El personal de la empresa fue amable y atento.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="testimonios">
+      <div class="testimoniocontenedor">
+          <!-- caja 3 -->
+          <div class="testimoniocaja">
+              <!-- top -->
+              <div class="cajatop">
+                  <!-- perfil -->
+                  <div class="perfil">
+                      <!-- imagen -->
+                      <div class="perfilimg">
+                          <img src="imagenes/perfil3.jpg">
+                      </div>
+                      <!-- nombre y usuario -->
+                      <div class="nameuser">
+                          <strong>Benjamín Ramírez</strong>
+                          <span>@Viajero Explorador</span>
+                      </div>
+                  </div>
+                  <!-- Reseñas -->
+                  <div class="reseñas">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+              </div>
+              <!-- comentarios -->
+              <div class="comentariosclientes">
+                  <p>
+                    Mi experiencia con esta empresa turística fue en su mayoría positiva y valio la pena. El personal fue amable y atento, siempre dispuesto a responder mis preguntas y brindar asistencia cuando la necesitaba.
+                    Los servicios y las comodidades proporcionadas fueron satisfactorios.</p>
+              </div>
+          </div>
+           <!-- caja 4 -->
+           <div class="testimoniocaja">
+              <!-- top -->
+              <div class="cajatop">
+                  <!-- perfil -->
+                  <div class="perfil">
+                      <!-- imagen -->
+                      <div class="perfilimg">
+                          <img src="imagenes/perfil4.jpg">
+                      </div>
+                      <!-- nombre y usuario -->
+                      <div class="nameuser">
+                          <strong>Sofía Anderson</strong>
+                          <span>@MundoSinFronteras</span>
+                      </div>
+                  </div>
+                  <!-- Reseñas -->
+                  <div class="reseñas">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+              </div>
+              <!-- comentarios -->
+              <div class="comentariosclientes">
+                  <p>
+                    Recomendaría esta empresa turística a cualquier persona que desee vivir una experiencia de viaje excepcional. Si buscas aventura, cultura y momentos inolvidables, no busques más. ¡Estoy ansiosa por pensar en mi próximo viaje con ellos!</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="servicescompra"><h2>Comprá en Trayecto Travel todo para tu viaje</h2></div>
+  <section class="contenedorcompra">
+  
+      <div class="rowcompra">
+        <div class="colcompra cardcompra">
+          <h2>¿Cómo comprar en Trayecto Travel?</h2>
+          <hr class="h">
+          <p>
+             En Trayecto Travel podés comprar todo para tus vacaciones muy facilmente.
+             Primero, ingresá la información de tu viaje en el buscador. Compará entre cientos
+             de opciones y elegí la que más te guste desde el botón Comprar.
+             Carga los datos de los pasajeros, seleccioná tu medio de pago y completá la
+             información requerida. 
+          </p>
+          <!-- <button type="button">Explorar</button> -->
+        </div>
+        
+        <!-- <div class="colcompra cardcompra"> -->
+          <!-- <div class="cardcompra cardcompra1">
+            <h3>Mar del Plata</h3>
+          </div>
+          <div class="cardcompra cardcompra2">
+            <h3>Puerto Iguazú</h3>
+          </div>
+          <div class="cardcompra cardcompra3">
+            <h3>Punta del Este</h3>
+          </div>
+          <div class="cardcompra cardcompra4">
+            <h3>Canada</h3>
+          </div> -->
+        <!-- </div> -->
+
+        <div class="colcompra cardcompra">
+          <h2>Documentación necesaria para comprar y viajar</h2>
+          <hr class="h">
+          <p>
+              Para comprar tu viaje en Trayecto Travel tené en mano el número de documento
+              de identidad, el nombre, el apellido y la fecha de nacimiento de cada uno de
+              los pasajeros.<br> Antes de viajar, revisá el detalle de tu reserva.
+              Si un menor viaja solo o acompañado, deberá contar con una autorización obligatoria
+              para salir del país.
+          </p>
+          <!-- <button type="button">Explorar</button> -->
+        </div>
+        <div class="colcompra cardcompra">
+          <h2>¿Se puede modificar o cancelar?</h2>
+          <hr class="h">
+          <p>
+            En Trayecto Travel podés gestionar el cambio o la cancelación de una reserva,
+            aunque tené en cuenta que algunos proveedores o tarifas no le permiten o cobran
+            un costo adicional por hacerlo.También podés cancelar una reserva para todos o
+            algunos de los pasajeros.
+            Lo que no podés hacer es cambió de titularidad a otra persona.
+          </p>
+          <!-- <button type="button">Explorar</button> -->
+        </div>
+        <!-- <div class="colcompra cardcompra">
+          <h2>Destinos populares</h2>
+          <p>
+            ¡Descubre la esencia de la aventura en los destinos más populares del mundo! Sumérgete en una experiencia única y emocionante mientras exploras lugares fascinantes que te dejarán sin aliento.    
+          </p>
+        </div> -->
+      </div>
+  </section>
+
+
+<!-- Esto es una prueba extension -->
+
+<div id="contact"></div>
+<section class="form-contenedor">
+  <form action="" class="form">
+    <div class="form-div">
+      <hr class="h">
+      <h2 class="form-title">CONTACTANOS</h2>
+      <hr class="h">
+    </div>
+    
+    <label for="nombre" class="form-label">Nombre y Apellido:</label>
+    <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre y apellido">
+    
+    <label for="direccion" class="form-label">Telefono:</label>
+    <input type="text" id="nombre" class="form-input" placeholder="Escriba su telefono">
+
+    <label for="correo" class="form-label">E-mail:</label>
+    <input type="text" id="nombre" class="form-input" placeholder="Escriba su e-mail">
+
+    <label for="consulta" class="form-label">Motivo de Consulta:</label>
+    <input type="text" id="nombre" class="form-input" placeholder="Escriba su motivo de consulta">
+
+    <label for="menesaje" class="form-label">Comentario:</label>
+    <textarea type="text" id="nombre" class="form-input" placeholder="Escriba aquí su comentario..."></textarea>
+    
+    <input type="submit" class="btn-submit" value="Enviar Consulta">
+
+  </form>
+</section>
+
+
+  <footer>
+    
+    <p id="tamañoletrafooter">CANALES DE ATENCIÓN <br>
+      0800-800-1682<br>
+      (Todos los días - 24 hs.)</p>
+      
+    <figure class="redes">
+    <img src="imagenes/instagram (5).png">
+    <img src="imagenes/facebook (2).png">
+    <img src="imagenes/linkedin.png">
+    <img src="imagenes/youtube.png">
+    <img src="imagenes/whatsapp.png">
+    </figure>
+   
+    <p>&copy; 2023 Trayecto Travel. Todos los derechos reservados.</p>
+ 
+  </ul>
+  </footer>
+</div>
+</body>
+</html>

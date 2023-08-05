@@ -1,0 +1,1220 @@
+/* Estilos generales */
+/* 
+.contenedor-general{
+  max-width: 1000px;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+  }
+
+h2{
+  display: flex;
+  margin-bottom: 5%;
+}
+/*Galeria Imagen - Carrusel*/
+/* #slider{
+  display: flex;
+  margin: 50px auto 0;
+  overflow: hidden;
+  margin-bottom: 40%;
+  animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider ul{
+  padding: 0;
+  width: 400%;
+}
+
+#slider li{
+  list-style: none;
+  display: inline;
+}
+
+.slider li img{
+  width: 557px;
+  height: 366px;
+  text-align: center;
+}
+
+@keyframes slide{
+  0%{margin-left: 0%;}
+  20%{margin-left: 0%;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+} */
+
+/*fin carrusel*/
+
+  /*efecto imagen texto*/
+/* #logo{
+  background:red;
+  background: radial-gradient(#eff1ff,#000);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+} */
+
+  /* #logo{
+    
+    width: 100%;
+    color: transparent;
+    font-size: 50px;
+    font-weight: bold; */
+/* 
+    background-image: url(imagenes/imagen1.jpg);
+    background-size: cover;
+
+
+    background-clip: text; */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+  /*fin efecto imagen texto*/
+
+/* .logo{
+  margin-left: 60px;
+} */
+  .plogo, h1{
+    color: #f2f2f2;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  
+  /* Estilos de la barra de navegación */
+  
+  header {
+    padding: 20px;
+  }
+
+/*Efecto header*/
+  #marca{
+    background: linear-gradient(45deg,rgb(121, 163, 242),rgb(12, 168, 246),rgb(3, 69, 102),rgb(2, 74, 110)) ;
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease infinite;
+    
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+
+/*Fin efecto header*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    /* color: #333; */
+    color: #fff;
+    font-weight: bold;
+  }
+  
+/*efecto botones*/
+  li:hover{
+    padding: 15px;
+    /* background-color:rgb(58, 80, 121); */
+    background-color:rgb(91, 210, 247);
+  }
+
+/*fin efecto botones*/
+
+  /* Estilos de la sección de inicio */
+  
+  .hero {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos de las secciones de destinos y servicios */
+  
+.services a{
+  text-decoration: none;
+  color: #fff;
+}
+
+  section {
+    padding: 40px;
+    background: #f2f2f2;
+  }
+  
+  /*card servicios*/
+  .cardservice{
+    width: 80%;
+    height: 250px;
+    display: block;
+    border-radius: 10px;
+    padding: 35px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px auto;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 40px;
+    
+ 
+  }
+
+  .cardserv1{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(imagenes/hotel.jpg);
+  }
+  .cardserv2{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(imagenes/auto.jpg);
+  }
+  .cardserv3{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(imagenes/excursiones.jpg);
+  }
+
+  .cardservice h3{
+    font-size: 20px;
+  }
+
+  .cardservice p{
+    font-size: 15px;
+  }
+
+  
+  .services h2{
+    font-size: 24px;
+    padding: 10px;
+    width: 40%;
+    margin-bottom: 30px;
+    background: rgb(8, 108, 159);
+    color: #fff;
+  
+  }
+
+  .servicescompra{
+    background-color: #f2f2f2;
+  }
+
+  .servicescompra h2{
+    /* margin-left: 50px; */
+    font-size: 24px;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 30px;
+    background: rgb(8, 108, 159);
+    color: #fff;
+  
+  }
+  /* Armado de cuadro de compras */
+ 
+  .contenedorcompra{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(imagenes/fondo.jpg); */
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+
+  .rowcompra{
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .colcompra{
+    flex-basis: 50%;
+  }
+  
+  .contenedorcompra .rowcompra .colcompra h2{
+    color:#fff;
+    font-size: 30px;
+    text-align: center;
+  
+  }
+  .contenedorcompra .rowcompra .colcompra h3{
+    color:#fff;
+    font-size: 20px;
+    margin-top: 70%;
+    text-align: center;
+  
+  }
+  .contenedorcompra .rowcompra .colcompra p{
+    color:#ffffffd5;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  /* .contenedorcompra .rowcompra .colcompra button{
+    width: 180px;
+    color: #000;
+    font-size: 15px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 25px;
+    cursor: pointer;
+  } */
+
+  /* .contenedorcompra .rowcompra .colcompra button:hover{
+    background:rgb(4, 130, 193);
+    color: #fff;
+  } */
+
+  .cardcompra{
+    width: 500px;
+    height: 600px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(3, 42, 62);
+    transition: transform 0.5s;
+    /* box-shadow: 2px 2px 30px rgb(91, 177, 242); */
+    box-shadow: 5px 5px 10px rgb(91, 217, 242);
+
+  }
+
+  .cardcompra:hover{
+    transform: translateY(-10px);
+  }
+
+  /* Fin Armado de cuadro de compras */
+
+
+  .service {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .destination img, .service img {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos de la sección de testimonios */
+  
+  .testimonial {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial h4 {
+    font-weight: bold;
+  }
+  
+  /* Estilos del formulario de contacto */
+  .form-contenedor .form .form-div .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #fff;
+    margin-left: 35%;
+    
+  }
+
+  .form-contenedor .form .form-div .h{
+    margin-bottom: 20px;
+    border-bottom: 2px solid aqua;
+  }
+
+  
+  .form-contenedor .form{/*armando el cuadro*/
+    background: rgba(0, 0, 0, .6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px; /*ver*/
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+  }
+
+  .form-contenedor .form .form-label{
+    display: block;/*uno abajo del otro*/
+    color: aqua;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+    margin-left: 20px;
+    
+  }
+
+  .form-contenedor .form .form-input, .form-textarea{
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid aqua;
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color:#fff ;
+    font-family: Roboto;
+
+  }
+
+  .form-contenedor .form .form-textarea{
+    resize: vertical;
+    max-width: 150px;
+    min-height: 50px;
+   
+  }
+
+  .form-contenedor .form .btn-submit{
+    width: 94%;
+    font-family: Roboto;
+    outline: none;
+    background:rgb(3, 69, 102);
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .form-contenedor .form .btn-submit:hover{
+    background: rgb(7, 111, 164);
+  }
+
+
+  /*Destinos Populares*/
+  .contenedor1{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(imagenes/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+
+  .row{
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .col{
+    flex-basis: 50%;
+  }
+  
+  .contenedor1 .row .col h2{
+    color:#fff;
+    font-size: 40px;
+  
+  }
+  .contenedor1 .row .col h3{
+    color:#fff;
+    font-size: 20px;
+    margin-top: 70%;
+    text-align: center;
+  
+  }
+  .contenedor1 .row .col p{
+    color:#fff;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contenedor1 .row .col button{
+    width: 180px;
+    color: #000;
+    font-size: 15px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+
+  .contenedor1 .row .col button:hover{
+    background:rgb(4, 130, 193);
+    color: #fff;
+  }
+
+  .card{
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    /* box-shadow: 10px 10px 10px rgb(239, 243, 244); */
+
+  }
+
+  .card:hover{
+    transform: translateY(-10px);
+  }
+
+  .card1{
+    background-image: url(imagenes/mardelplata.jpg);
+  }
+  .card2{
+    background-image: url(imagenes/cataratas.jpg);
+  }
+  .card3{
+    background-image: url(imagenes/puntadeleste.jpg);
+  }
+  .card4{
+    background-image: url(imagenes/toronto.jpg);
+  }
+
+/*testimonios*/
+.testimonios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.testimoniocontenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;/*para ajustar a la pantalla*/
+  width: 100%;
+}
+
+.testimoniocaja{
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.perfilimg{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.perfilimg img{/*la imagen se ajusta al contenedor*/
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+}
+
+.perfil{
+  display: flex;
+  align-items: center;
+}
+
+.nameuser{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.nameuser strong{
+  color: #3d3d3d;
+  font-size: 1.3rem;
+}
+
+.nameuser span{
+  color: #979797;
+  font-size: 1.1rem;
+}
+
+.reseñas{
+  color: #f9d71c;
+}
+
+.cajatop{
+  display: flex;
+  justify-content: space-between; /*enviamos las estrellas al otro extremo*/
+  margin-bottom: 20px;
+  /* align-items: center;*//*para que quede alineadas las estrellas al texto*/
+}
+
+.comentariosclientes p{
+  color: #4b4b4b;
+}
+
+::selection{
+  color: white;
+  background-color: #252525;
+}
+
+
+/*servis vuelos formulario*/
+.form-contenedor-vuelo .form-vuelos .servisvuelo h2{
+  width: 100%;
+  justify-content: center;
+}
+
+
+
+/*formulario de busqueda vuelos*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.form-contenedor-vuelo{
+    font-family: sans-serif;
+}
+.form-contenedor-vuelo .form-vuelos .row-vuelos .col2-vuelos{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #fff;
+
+  }
+
+
+.form-contenedor-vuelo .form-vuelos{/*armando el cuadro*/
+    background: rgba(3, 73, 108, 0.6);
+    width: 70%;
+    margin: auto;
+    padding: 5px 35px; 
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+  }
+
+
+  .form-contenedor-vuelo .form-vuelos .form-label-vuelos{
+    display: block;/*uno abajo del otro*/
+    color: aqua;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+  }
+
+.form-contenedor-vuelo .form-vuelos .form-div-vuelos input{ /*Cambiando color a los input radio*/
+     accent-color: aqua;
+     color: aqua;
+     margin-left: 100px;
+     margin-right: 10px;
+    
+}
+
+.form-contenedor-vuelo .form-vuelos .form-div-vuelos{
+    font-size: 20px;
+    color: aqua;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+.row-vuelos{ /* lo enviamos hasta abajo al texto - fila*/
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col-vuelos{ /*lo posicionamos que tome la mitad de la pag. - columna*/
+    flex-basis: 50% ;
+}
+
+.form-contenedor-vuelo .form-vuelos .row-vuelos .col-vuelos, .col2-vuelos{
+    margin-right: 20px;
+}
+
+.form-contenedor-vuelo .form-vuelos .row-vuelos .col2-vuelos label{
+    margin-top: 10px; /*ver
+    */
+    text-align: center;
+  
+}
+
+.form-contenedor-vuelo .form-vuelos .row-vuelos .col2-vuelos input{
+    text-align: center;
+    margin-left: 12%;
+}
+
+.form-contenedor-vuelo .form-vuelos .row-vuelos .col2-vuelos input[type="date"]{
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 9px;
+    font-family: "Roboto Mono",monospace;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: #fff;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-contenedor-vuelo .form-vuelos .row-vuelos .col2-vuelos input[type="checkbox"]{
+    margin-left: 30%;
+    accent-color: aqua;
+}
+
+.form-contenedor-vuelo .form-vuelos .row-vuelos .col2-vuelos .contenedornum-vuelos input[type="number"]{
+    margin-left: 30%;
+    /* accent-color: aqua; */
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 9px;
+    font-family: "Roboto Mono",monospace;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.form-contenedor-vuelo .form-vuelos .row-vuelos .col2-vuelos .form-label-vuelos,.contenedornum-vuelos .form-label-vuelos{
+    margin-left: 30px;
+}
+
+/*probando diseño select*/
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    outline: 0; 
+    box-shadow: none; 
+    background-color: rgba(0, 0, 0, .7);
+    background-image: none;
+    border-radius: 10px;
+    border-color: aqua;
+
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+.select-vuelos{
+
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+select{
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.select-vuelos::after{
+    margin-left: 30px;
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #000;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 2s all ease;
+}
+
+.select-vuelos:hover::after{
+    color: aqua;
+}
+
+
+
+.form-contenedor-vuelo .form-vuelos .botonbuscar-vuelos{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+.form-contenedor-vuelo .form-vuelos .botonbuscar-vuelos .btn-submit{
+   
+    width: 50%;
+    font-family: Roboto;
+    outline: none;
+    background:rgb(3, 69, 102);
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .form-contenedor-vuelo .form-vuelos .btn-submit:hover{
+    background: rgb(7, 111, 164);
+  }
+
+/*FIN FORUMARIO DE BUSQUEDA VUELOS*/
+
+/*Tevez promociones y contacto*/
+
+/* Estilo de pagina promocion*/
+.tittle h2{
+  font-size: 24px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: rgb(8, 108, 159);
+  color: #fff;
+
+}
+
+.tittle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.tittle2 h2{
+  font-size: 24px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #000;
+
+}
+
+.tittle2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+  .container{
+    width: 100%;
+    display:flex;
+    flex-flow: wrap;
+    max-width: 100%;
+  }
+  .container2{
+    width: 100%;
+    display:flex;
+    max-width: 100%;
+  }
+  .cards{
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 6px;
+    background: var(--i);
+    background-size:cover;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .cards:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+
+  .cards .contenido{
+    padding: 15px;
+    text-align: center;
+  }
+  .cards .contenido p{
+    margin-top: 50px;
+    text-align: left;
+    line-height: 1.5;
+    color: #fff;
+  }
+  .cards .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+  .cards .contenido a:hover{
+    background: #fff;
+    color:#333;
+  }
+.cards2{
+  max-width: 300px;
+  height: 400px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 0 12px #d7d7d7;
+}
+  .header-cards img{
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 350px;
+    width: 100%;
+  }
+.categoria-cards{
+  margin-top: 0;
+}
+.categoria-cards span{
+  background-color: rgb(8, 108, 159);
+  color: #fff;
+  padding: .2rem .5rem;
+  border-radius: 4px;
+}
+.texto-cards{
+  margin-top: 1rem;
+}
+.cards-wrap{
+  display: flex;
+  flex-flow:wrap;
+}
+.cajas_cont {
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin: 30px;
+	position: relative;
+}
+
+.cajas_cont img{
+  margin-top: 15%;
+}
+/* buscador*/
+.containerb{
+  position: absolute;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+input.src{
+  outline: none;
+  width: 300px;
+  padding: 9px 10px 9px 32px;
+  color: #000;
+  border-radius: 18px;
+  font-size: 20px;
+  border: 4px solid rgb(8, 108, 159);
+  transition: all .5s;
+}
+@media all and (min-width: 600px) and (max-width: 1023px) {
+	#contenedor {
+		width: 580px;
+	}
+
+	.cajas_cont {
+		width: 170px;
+	}
+}
+/*fin de estilo de la pagina promocion*/
+
+/*inicio estilo pagina contacto*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* *{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+} */
+.fondo{
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-attachment: fixed;
+  }
+.container-form{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.container-form h2{
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.container-form p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a{
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight:700;
+}
+.container-form a i{
+  color:  rgb(2, 74, 110);
+  margin-right: 10px;
+}
+/* inicio del codigo del formulario contactanos*/
+.container2 .form .form-header .form-tittle{
+	font-weight: normal;
+	font-family: sans-serif;
+	color: blue;
+	text-align: center;
+	padding: 14px 0;
+  }
+  .container2 .form .form-header .form-tittle span{
+	color: black;
+  }
+  .container2 .form {
+	width: 90%;
+	max-width: 650px;
+	margin: 150;
+	padding: 5px 35px;
+	margin-top: 0;
+	padding-bottom: 30px;
+	border-radius: 3px;
+  }
+  .container2 .form .form-label{
+	display: block;
+	color: blue;
+	font-size: 16px;
+	font-family: Roboto;
+	position: relative;
+  }
+  .container2 .form .form-input, .form-textareas{
+	background: rgba(0, 0, 0, 0.7);
+	border: none;
+	outline: none;
+	border-bottom: 2px solid blue;
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #fff;
+	font-family: Roboto;
+  }
+  .container2 .form, .form-textareas{
+	resize: vertical;
+	max-height: 150px;
+	min-height: 50px;
+  }
+  .container2 .form .boton-submit{
+	width: 100%;
+  margin-left: 12px;
+	font-family: Roboto;
+	outline: none;
+	background: rgb(2, 74, 110);
+	font-size: 16px;
+	border: none;
+	color: #fff;
+	padding: 15px 0;
+	cursor: pointer;
+  }
+  .container2 .form .boton-submit:hover{
+	background: blue;
+  }
+
+/*Fin efecto Tevez promociones y contacto*/
+
+/*Silvana Trabajo, CV y Asitencia*/
+
+.contenedor-job{
+  padding: 20px;
+
+}
+
+#job-titulo{
+  font-size: 35px;
+}
+.job-listing {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.job-title {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.job-description {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #00CED1;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+/*Efecto CV*/
+
+#form-cv{
+justify-content: center;
+}
+
+.contenedor-form-cv {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contenedor-form-cv .form-group {
+  margin-bottom: 20px;
+}
+
+.contenedor-form-cv .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+} 
+
+.contenedor-form-cv .form-group input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} 
+
+.contenedor-form-cv .form-group .submit-button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #00a2e8;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contenedor-form-cv .form-group .submit-button:hover {
+  background-color: #00a2e8;
+} 
+
+
+/*Efecto asistencia*/
+.image-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.discount-section,
+  .faq-section,
+  .payment-methods-section {
+    margin-bottom: 30px;
+  } 
+
+/*Fin efecto Silvana Trabajo, CV y Asitencia*/
+
+/* Estilos PIE DE PAGINA */
+footer{
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: auto;
+  height: 155px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+  background-color: rgb(2, 74, 110);
+
+}
+
+#tamañoletrafooter{
+  font-size: 14px;
+}
+
+/* @media (max-width:800px){
+ .contenedor-general{
+  width: ;
+ }
+} */
